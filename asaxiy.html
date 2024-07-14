@@ -1,0 +1,740 @@
+FIRDAVS ݆݆݆݆݆݆݆݆݆݆݆݆݆݆݆݆݆݆ܻܻࣩ݅݅݅݅݅݅݅݅݅݅݅݅݅݅݅݅݅݅݅݅݅݅݅݅݅݅݅݅݅݅݅݅݅݅݅݅݅݅݅݅݅݅݅, [14.07.2024 14:54]
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./asaxiy.css">
+</head>
+<style>
+    .carousel {
+        max-width: 650px;
+
+        overflow: hidden;
+        position: relative;
+        border-radius: 10px;
+    }
+
+    .carousel-inner {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+
+    .carousel-item {
+        width: 650px;
+
+        flex: 0 0 auto;
+        display: none;
+        /* Slide hozircha yashirilgan bo'lsa kerak */
+    }
+
+    .carousel-item img {
+        width: 650px;
+        height: 368px;
+        object-fit: cover;
+    }
+
+    .carousel-controls {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .carusel1 {
+        border: none;
+        background: rgba(0, 0, 0, 0);
+        font-size: 45px;
+    } <style>
+    .carousel {
+        max-width: 650px;
+
+        overflow: hidden;
+        position: relative;
+        border-radius: 10px;
+    }
+
+    .carousel-inner {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+
+    .carousel-item {
+        width: 650px;
+
+        flex: 0 0 auto;
+        display: none;
+        /* Slide hozircha yashirilgan bo'lsa kerak */
+    }
+
+    .carousel-item img {
+        width: 650px;
+        height: 368px;
+        object-fit: cover;
+    }
+
+    .carousel-controls {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .carusel1 {
+        border: none;
+        background: rgba(0, 0, 0, 0);
+        font-size: 45px;
+    }
+</style>
+
+    
+
+<body>
+
+    <div class="rang1">
+
+        <header>
+            <!-- <i class="bi1 bi bi-list"></i> -->
+            <img class="logo1"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEXCYY5eHPW7MD-BIoTPZw47V1IBOuovvAqg&s"
+                alt="">
+            <div class="buttons">
+                <button type="button" class="btn btn-primary"><i class="bi bi-list"></i>Категории</button>
+
+                <div class="nol"><input type="text" placeholder="поиск..."><button type="button"
+                        class="btn btn-primary">Искать</button></div>
+                <button class="head1"><img src="./img/TAROZI.svg" alt="">Sravneni</button>
+                <button class="head1"><i class="bi bi-credit-card">Otpladit</i></button>
+                <button class="head1"><i class="bi bi-geo-alt-fill">Ostledit</i></button>
+                <button class="head1"><i class="bi bi-cart3">Korzina</i></button>
+                <button class="head1"><i class="bi bi-heart">Избранное</i></button>
+                <button class="head2"><img src="data:image/png;base64,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"
+                        alt="">O'zbekcha</button>
+                        <button class="head3"><i class="bi bi-person"></i>Войти</button>
+            </div>
+        </header>
+        <div class="nol2"><input type="text" placeholder="поиск...">
+            <div class="bn2"><button type="button" class="btn btn-primary">Искать</button></div>
+        </div>
+        <div class="buttons">
+            <div class="headertagi">
+                <a href="">Скидки</a>
+                <a href="">Кондицанеры</a>
+                <a href="">Телефони</a>
+                <a href="">Битовая техника</a>
+                <a href="">Книги</a>
+                <a href="">Телевизори</a>
+                <a href="">Ноутбуки</a>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="container3">
+        <div class="section">
+            <div class="carousel" id="customCarousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img src="./img/baner-1.webp" alt="Slide 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/baner-2.webp" alt="Slide 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/baner-3.webp" alt="Slide 3">
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carusel1" onclick="prevSlide()">
+                      
+                            <button class="carusel1" onclick="nextSlide()">></button>
+                </div>
+                
+            </div>
+            
+
+            <script>
+                let currentSlide = 0;
+                const slides = document.querySelectorAll('.carousel-item');
+                const totalSlides = slides.length;
+
+                function showSlide() {
+                    slides.forEach((slide, index) => {
+                        if (index === currentSlide) {
+                            slide.style.display = 'block';
+                        } else {
+                            slide.style.display = 'none';
+                        }
+                    });
+                }
+
+                function prevSlide() {
+                    currentSlide--;
+                    if (currentSlide < 0) {
+                        currentSlide = totalSlides - 1;
+                    }
+                    showSlide();
+                }
+
+                function nextSlide() {
+                    currentSlide++;
+                    if (currentSlide >= totalSlides) {
+                        currentSlide = 0;
+                    }
+                    showSlide();
+                }
+
+                function autoSlide() {
+                    nextSlide();
+                }
+
+                // Avtomatik ravishda karusel ishga tushurish
+                setInterval(autoSlide, 3000); // 3 sekunddan keyin o'tkaziladi
+            </script>
+            <div class="cart4">
+                
+                <div class="card" style="width: 18rem;">
+                    <img style="width: 100px;" src="./img/aser-notbuok.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Aser Aspire 3 A315-59 / i51235U / DD</h5>
+                        <div class="tarqash"><del>5 749 000</del>
+                            <p style="color: red;">10%</p>
+                        </div>
+                        <div class="tarqash">
+                            <p>5 199 000</p>
+                            <p>⭐️5</p>
+                        </div>
+                        <!-- <p class="card-text"></p> -->
+                        <a href="#" class="btn btn-primary">Купимить</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/klavatoriya.webp" class="card-img-top" alt="..."> <br><br>
+                    <div class="card-body">
+                        <h5 class="card-title">T-Wolf TF270</h5>
+                        <div class="tarqash"><del>231 000</del>
+                            <p>13%</p>
+                        </div>
+                        <div class="tarqash">
+                            <p>149 000</p>
+                            <p>⭐️5</p>
+                        </div>
+                        <!-- <p class="card-text"></p> -->
+                        <a href="#" class="btn btn-primary">Купимить</a>
+                    </div>
+                </div>
+                <div class="card cardplus" style="width: 18rem;">
+                    <img src="./img/quloqchin-569 000.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">JBL Tune 51OBT Black</h5>
+                        <div class="tarqash"><del>570 000</del>
+                            <p style="color: red;">13%</p>
+                        </div>
+                        <div class="tarqash">
+                            <p>513 000</p>
+                            <p>⭐️5</p>
+                        </div>
+                        <!-- <p class="card-text"></p> -->
+                        <a href="#" class="btn btn-primary">Купимить</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+        <div class="carti2">
+
+            <div class="cardmin card " style="width: 18rem;">
+                <img style="width: 110px;" src="./img/a 55 tel.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">SMARTFON SAMSUNG GALAXY A15 8/256GB Black</h5>
+                    <!-- <div class="tarqash"><del>2409000</del> <p>13%</p></div>
+          <div class="tarqash"><p>2099000</p> <p>⭐️5</p></div> -->
+                    <p>⭐️⭐️⭐️⭐️⭐️</p>
+                    <del>2 030 000</del>
+                    <b>1 859 000</b>
+                    <small>215 400 som x 12oy</small>
+                    <!-- <p class="card-text"></p> -->
+                    <a href="#" class="btn btn-primary">Купимить</a>
+                </div>
+            </div>
+
+            <div class="cardmin card " style="width: 18rem;">
+                <img style="width: 150px;" src="./img/quloqchin.webp" class="card-img-top" alt="..."> 
+                <div class="card-body">
+                    <h5 class="card-title">Samsung Galaxy Buds 2 Violet</h5>
+                    <!-- <div class="tarqash"><del>2409000</del> <p>13%</p></div>
+          <div class="tarqash"><p>2099000</p> <p>⭐️5</p></div> -->
+                    <p>⭐️⭐️⭐️⭐️⭐️</p>
+                    <del>1 030 000</del>
+                    <b>1 859 000</b>
+                    <small>215 400 som x 12oy</small>
+                    <!-- <p class="card-text"></p> -->
+                    <a href="#" class="btn btn-primary">Купимить</a>
+                </div>
+            </div>
+            
+            <div class="cardmin card " style="width: 18rem;">
+                <img src="./img/gaz pilita.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">SMARTFON SAMSUNG GALAXY A15 8/256GB Black</h5>
+                    <!-- <div class="tarqash"><del>2409000</del> <p>13%</p></div>
+          <div class="tarqash"><p>2099000</p> <p>⭐️5</p></div> -->
+                    <p>⭐️⭐️⭐️⭐️⭐️</p>
+                    <del>2 030 000</del>
+                    <b>1 859 000</b>
+                    <small>215 400 som x 12oy</small>
+                    <!-- <p class="card-text"></p> -->
+                    <a href="#" class="btn btn-primary">Купимить</a>
+                </div>
+            </div>
+           
+            <div class="cardmin card " style="width: 18rem;">
+                <img src="./img/HDMI am am 49 000.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">SMARTFON SAMSUNG GALAXY A15 8/256GB Black</h5>
+                    <!-- <div class="tarqash"><del>2409000</del> <p>13%</p></div>
+          <div class="tarqash"><p>2099000</p> <p>⭐️5</p></div> -->
+                    <p>⭐️⭐️⭐️⭐️⭐️</p>
+                    <del>2 030 000</del>
+                    <b>1 859 000</b>
+                    <small>215 400 som x 12oy</small>
+                    <!-- <p class="card-text"></p> -->
+                    <a href="#" class="btn btn-primary">Купимить</a>
+                </div>
+            </div>
+
+            <div class="cardmin card " style="width: 18rem;">
+                <img src="./img/kireslo 250000.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">SMARTFON SAMSUNG GALAXY A15 8/256GB Black</h5>
+                    <!-- <div class="tarqash"><del>2409000</del> <p>13%</p></div>
+          <div class="tarqash"><p>2099000</p> <p>⭐️5</p></div> -->
+                    <p>⭐️⭐️⭐️⭐️⭐️</p><br>
+                    <del>2 030 000</del>
+                    <b>1 859 000</b>
+                    
+                    <small>215 400 som x 12oy</small>
+                    <!-- <p class="card-text"></p> --> 
+                    <a href="#" class="btn btn-primary">Купимить</a>
+                </div>
+            </div>
+
+            <div class="cardmin card " style="width: 18rem;">
+                <img src="./img/qorgon kitob 59som.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">SMARTFON SAMSUNG GALAXY A15 8/256GB Black</h5>
+                    <!-- <div class="tarqash"><del>2409000</del> <p>13%</p></div>
+          <div class="tarqash"><p>2099000</p> <p>⭐️5</p></div> -->
+                    <p>⭐️⭐️⭐️⭐️⭐️</p>
+                    <del>2 030 000</del>
+                    <b>1 859 000</b>
+                    <small>215 400 som x 12oy</small>
+                    <!-- <p class="card-text"></p> -->
+                    <a href="#" class="btn btn-primary">Купимить</a>
+                </div>
+            </div>
+
+            <div class="cardmin card " style="width: 18rem;">
+                <img src="./img/qutliq qon.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">QUTLUQ QON</h5>
+                    <!-- <div class="tarqash"><del>2409000</del> <p>13%</p></div>
+          <div class="tarqash"><p>2099000</p> <p>⭐️5</p></div> -->
+                    <p>⭐️⭐️⭐️⭐️</p>
+                    <del>2 030 000</del>
+                    <b>1 859 000</b>
+                    <small>215 400 som x 12oy</small>
+                    <!-- <p class="card-text"></p> -->
+                    <a href="#" class="btn btn-primary">Купимить</a>
+                </div>
+            </div>     <div class="cardmin card " style="width: 18rem; height: 25rem;">
+                <img style="height: 120px;" src="./img/dazmol.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">SMARTFON SAMSUNG GALAXY A15 8/256GB Black</h5>
+                    <!-- <div class="tarqash"><del>2409000</del> <p>13%</p></div>
+          <div class="tarqash"><p>2099000</p> <p>⭐️5</p></div> -->
+                    <p>⭐️⭐️⭐️⭐️⭐️</p>
+                    <del>2 030 000</del>
+                    <b>1 859 000</b>
+                    <small>215 400 som x 12oy</small>
+                    <!-- <p class="card-text"></p> --> 
+                    <a href="#" class="btn btn-primary">Купимить</a>
+                </div>
+            </div>
+            <div class="cardmin card " style="width: 18rem;">
+                <img src="./img/tap A9 2309000.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">SMARTFON SAMSUNG GALAXY A15 8/256GB Black</h5>
+                    <!-- <div class="tarqash"><del>2409000</del> <p>13%</p></div>
+          <div class="tarqash"><p>2099000</p> <p>⭐️5</p></div> -->
+                    <p>⭐️⭐️⭐️⭐️⭐️</p>
+                    <del>2 030 000</del>
+                    <b>1 859 000</b>
+                    <small>215 400 som x 12oy</small>
+                    <!-- <p class="card-text"></p> -->
+                    <a href="#" class="btn btn-primary">Купимить</a>
+                </div>
+            </div>
+            <div class="cardmin card " style="width: 18rem;">
+                <img src="./img/USB-C 20W kabil.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">SMARTFON SAMSUNG GALAXY A15 8/256GB Black</h5>
+                    <!-- <div class="tarqash"><del>2409000</del> <p>13%</p></div>
+          <div class="tarqash"><p>2099000</p> <p>⭐️5</p></div> -->
+                    <p>⭐️⭐️⭐️⭐️⭐️</p>
+                    <del>2 030 000</del>
+                    <b>1 859 000</b>
+                    <small>215 400 som x 12oy</small>
+                    <!-- <p class="card-text"></p> -->
+                    <a href="#" class="btn btn-primary">Купимить</a>
+                </div>
+            </div>     <div class="cardmin card " style="width: 18rem;">
+                <img src="./img/wi fi.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">SMARTFON SAMSUNG GALAXY A15 8/256GB Black</h5>
+                    <!-- <div class="tarqash"><del>2409000</del> <p>13%</p></div>
+          <div class="tarqash"><p>2099000</p> <p>⭐️5</p></div> -->
+                    <p>⭐️⭐️⭐️⭐️⭐️</p>
+                    <del>2 030 000</del>
+                    <b>1 859 000</b>
+                    <small>215 400 som x 12oy</small>
+                    <!-- <p class="card-text"></p> -->
+                    <a href="#" class="btn btn-primary">Купимить</a>
+                </div>
+            </div>     <div class="cardmin card " style="width: 18rem;">
+                <img style="width: 120px;" src="./img/soat.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">SMARTFON SAMSUNG GALAXY A15 8/256GB Black</h5>
+                    <!-- <div class="tarqash"><del>2409000</del> <p>13%</p></div>
+          <div class="tarqash"><p>2099000</p> <p>⭐️5</p></div> -->
+                    <p>⭐️⭐️⭐️⭐️⭐️</p>
+                    <del>2 030 000</del>
+                    <b>1 859 000</b>
+                    <small>215 400 som x 12oy</small>
+                    <!-- <p class="card-text"></p> -->
+                    <a href="#" class="btn btn-primary">Купимитьh</a>
+                </div>
+            </div>     <div class="cardmin card " style="width: 18rem;">
+                <img src="./img/box tv 4k 2nd gen hdr...webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">SMARTFON SAMSUNG GALAXY A15 8/256GB Black</h5>
+                    <!-- <div class="tarqash"><del>2409000</del> <p>13%</p></div>
+          <div class="tarqash"><p>2099000</p> <p>⭐️5</p></div> -->
+                    <p>⭐️⭐️⭐️⭐️⭐️</p>
+                    <del>2 030 000</del>
+                    <b>1 859 000</b>
+                    <small>215 400 som x 12oy</small>
+                    <!-- <p class="card-text"></p> -->
+                    <a href="#" class="btn btn-primary">Купимить</a>
+                </div>
+            </div>     <div class="cardmin card " style="width: 18rem;">
+                <img src="./img/canon pixma g3430.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">SMARTFON SAMSUNG GALAXY A15 8/256GB Black</h5>
+                    <!-- <div class="tarqash"><del>2409000</del> <p>13%</p></div>
+          <div class="tarqash"><p>2099000</p> <p>⭐️5</p></div> -->
+                    <p>⭐️⭐️⭐️⭐️⭐️</p>
+                    <del>2 030 000</del>
+                    <b>1 859 000</b>
+                    <small>215 400 som x 12oy</small>
+                    <!-- <p class="card-text"></p> -->
+                    <a href="#" class="btn btn-primary">Купимить</a>
+                </div>
+            </div>     <div class="cardmin card " style="width: 18rem;">
+                <img src="./img/chang yutkich bgls482200.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">SMARTFON SAMSUNG GALAXY A15 8/256GB Black</h5>
+                    <!-- <div class="tarqash"><del>2409000</del> <p>13%</p></div>
+          <div class="tarqash"><p>2099000</p> <p>⭐️5</p></div> -->
+                    <p>⭐️⭐️⭐️⭐️⭐️</p>
+                    <del>2 030 000</del>
+                    <b>1 859 000</b>
+                    <small>215 400 som x 12oy</small>
+                    <!-- <p class="card-text"></p> -->
+                    <a href="#" class="btn btn-primary">Купимить</a>
+                </div>
+            </div>     <div class="cardmin card " style="width: 18rem;">
+                <img src="./img/galaxiy S24 ultira.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">SMARTFON SAMSUNG GALAXY A15 8/256GB Black</h5>
+                    <!-- <div class="tarqash"><del>2409000</del> <p>13%</p></div>
+          <div class="tarqash"><p>2099000</p> <p>⭐️5</p></div> -->
+                    <p>⭐️⭐️⭐️⭐️⭐️</p>
+                    <del>2 030 000</del>
+                    <b>1 859 000</b>
+                    <small>215 400 som x 12oy</small>
+                    <!-- <p class="card-text"></p> -->
+                    <a href="#" class="btn btn-primary">Купимить</a>
+                </div>
+            </div>
+            <div class="cardmin card " style="width: 18rem;">
+                <img width="10px" src="./img/HDMI am am 49 000.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">SMARTFON SAMSUNG GALAXY A15 8/256GB Black</h5>
+                    <!-- <div class="tarqash"><del>2409000</del> <p>13%</p></div>
+          <div class="tarqash"><p>2099000</p> <p>⭐️5</p></div> -->
+                    <p>⭐️⭐️⭐️⭐️⭐️</p>
+                    <del>2 030 000</del>
+                    <b>1 859 000</b>
+                    <small>215 400 som x 12oy</small>
+                    <!-- <p class="card-text"></p> -->
+                    <a href="#" class="btn btn-primary">Купимить</a>
+                </div>
+            </div>
+            <div class="cardmin card " style="width: 18rem;">
+                <img src="./img/honor x7b.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">SMARTFON SAMSUNG GALAXY A15 8/256GB Black</h5>
+                    <!-- <div class="tarqash"><del>2409000</del> <p>13%</p></div>
+          <div class="tarqash"><p>2099000</p> <p>⭐️5</p></div> -->
+                    <p>⭐️⭐️⭐️⭐️⭐️</p>
+                    <del>2 030 000</del>
+                    <b>1 859 000</b>
+                    <small>215 400 som x 12oy</small>
+                    <!-- <p class="card-text"></p> -->
+                    <a href="#" class="btn btn-primary">Купимить</a>
+                </div>
+            </div>
+            <div class="cardmin card " style="width: 18rem;">
+                <img src="./img/HONOR X8b 256gb.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">SMARTFON SAMSUNG GALAXY A15 8/256GB Black</h5>
+                    <!-- <div class="tarqash"><del>2409000</del> <p>13%</p></div>
+          <div class="tarqash"><p>2099000</p> <p>⭐️5</p></div> -->
+                    <p>⭐️⭐️⭐️⭐️⭐️</p>
+                    <del>2 030 000</del>
+                    <b>1 859 000</b>
+                    <small>215 400 som x 12oy</small>
+                    <!-- <p class="card-text"></p> -->
+                    <a href="#" class="btn btn-primary">Купимить</a>
+                </div>
+            </div>
+            <div class="cardmin card " style="width: 18rem;">
+                <img style="width: 100px;" src="./img/honor X9b 5G 4.2,ml.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">SMARTFON SAMSUNG GALAXY A15 8/256GB Black</h5>
+                    <!-- <div class="tarqash"><del>2409000</del> <p>13%</p></div>
+          <div class="tarqash"><p>2099000</p> <p>⭐️5</p></div> -->
+                    <p>⭐️⭐️⭐️⭐️⭐️</p>
+                    <del>2 030 000</del>
+                    <b>1 859 000</b>
+                    <small>215 400 som x 12oy</small>
+                    <!-- <p class="card-text"></p> -->
+                    <a href="#" class="btn btn-primary">Купимить</a>
+                </div>
+            </div>
+            <div class="cardmin card " style="width: 18rem;">
+                <img style="height: 195px;" src="./img/kadidsan=ner-2.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">SMARTFON SAMSUNG GALAXY A15 8/256GB Black</h5>
+                    <!-- <div class="tarqash"><del>2409000</del> <p>13%</p></div>
+          <div class="tarqash"><p>2099000</p> <p>⭐️5</p></div> -->
+                    <p>⭐️⭐️⭐️⭐️⭐️</p>
+                    <del>2 030 000</del>
+                    <b>1 859 000</b>
+                    <small>215 400 som x 12oy</small>
+                    <!-- <p class="card-text"></p> -->
+                    <a href="#" class="btn btn-primary">Купимить</a>
+                </div>
+            </div>
+            <div class="cardmin card " style="width: 18rem;">
+                <img style="width: 70px;" src="./img/intex.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">SMARTFON SAMSUNG GALAXY A15 8/256GB Black</h5> <br>
+                    <!-- <div class="tarqash"><del>2409000</del> <p>13%</p></div>
+          <div class="tarqash"><p>2099000</p> <p>⭐️5</p></div> -->
+                  <p>⭐️⭐️⭐️⭐️⭐️</p> <br>
+                    <del>2 030 000</del>
+                    <b>1 859 000</b>
+                    <small>215 400 som x 12oy</small>
+                    <!-- <p class="card-text"></p> -->
+                    <a href="#" class="btn btn-primary">Купимить</a>
+                </div>
+            </div>
+            <div class="cardmin card " style="width: 18rem;">
+                <img style="height:130px;" src="./img/kir moshna.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">SMARTFON SAMSUNG GALAXY A15 8/256GB Black</h5> <br>
+                    <!-- <div class="tarqash"><del>2409000</del> <p>13%</p></div>
+          <div class="tarqash"><p>2099000</p> <p>⭐️5</p></div> -->
+                    <p>⭐️⭐️⭐️⭐️⭐️</p> <br>
+                    <del>2 030 000</del>
+                    <b>1 859 000</b>
+                    <small>215 400 som x 12oy</small>
+                    <!-- <p class="card-text"></p> -->
+                    <a href="#" class="btn btn-primary">Купимить</a>
+                </div>
+            </div>
+            <div class="cardmin card " style="width: 18rem;">
+                <img  style="width: 95px;" src="./img/kireslo 250000.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">SMARTFON SAMSUNG GALAXY A15 8/256GB Black</h5> <br>
+                    <!-- <div class="tarqash"><del>2409000</del> <p>13%</p></div>
+          <div class="tarqash"><p>2099000</p> <p>⭐️5</p></div> -->
+                    <p>⭐️⭐️⭐️⭐️⭐️</p> <br>
+                    <del>2 030 000</del>
+                    <b>1 859 000</b>
+                    <small>215 400 som x 12oy</small>
+                    <!-- <p class="card-text"></p> -->
+                    <a href="#" class="btn btn-primary">Купимить</a>
+                </div>
+            </div>
+    
+          
+           
+        </div>
+
+        <div class="fix">
+            <div class="fix-1">
+                <div class="fix-iconn">
+             <div class="display">
+                
+                    <div class="fix-icon">
+                        <button class="fix-2">  <i class="bi bi-house-door-fill"><p>главная</p></i></button> 
+                       </div>
+                    <div class="fix-icon">
+                   <button class="fix-2">   <i class="bi bi-microsoft"><p>Каталог</p></i></button>  
+                    </div>
+                    <div class="fix-icon">
+                     <button class="fix-2">  <i class="bi bi-cart-dash-fill"><p>Корзина</p></i></button> 
+                    </div>
+                    <div class="fix-icon">
+                      <button  class="fix-2">  <i class="bi bi-person-fill"><p>Личний </p></i></button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+       
+
+
+    </div>
+
+    <div class="brend">
+        <h5>Mashhur brendlar ></h5>
+        <div class="minbrend">
+            <div class="none"><img src="./img/apple.webp" alt=""></div>
+            <div class="none"><img src="./img/artel.webp" alt=""></div>
+            <div><img src="./img/aser.webp" alt=""></div>
+            <div><img src="./img/lenova.webp" alt=""></div>
+            <div class="none"><img src="./img/sonny.webp" alt=""></div>
+        </div>
+    </div>
+
+    <div class="asaxiy">
+        <h1>Asaxiy kompaniyasi haqida </h1>
+        <p>Butun O'zbekiston boylab maishiy texnika va elektronika tovarlarini yetkazib beruvchi kompaniyamizning
+            asosiy afzalligi - kop yillik ish tajribasi va yaxshi nom qozonib ulgurgandir. Asos solinganidan buyon
+            Asaxiy internet-dokoni va uning jamosi istemol bozorining talablari tendensiyalarini tinimsiz kuzatib
+            kelmoqda; bu esa bizga eng songi texnalogiyalar va inavatsion yechimlardan hamisha boxabar bo'lib turish
+            imkonini beradi.</p>
+        <p>Kompniya mutaxassislari mijozlarimizning istaklarini diqqat bilan o'rganishadi, shu bois rusurs doimiy
+            tarzda hamyanbop narxlardagi sifatli yangi mahsulotlar bilan boyitilib kelmoqda.</p>
+        <br>
+        <hr>
+        <h6>Kompaniyaning ish tamoyili</h6> <br>
+        <h6>Bizning afzalliklarimiz</h6>
+        <hr>
+        <h6>"Asaxiy Books" MCHJ</h6>
+        <h6>Ro'yxatdan o'tish raqami: 646439</h6>
+        <h6>INN: 305829008</h6>
+        <h6>MCHJ rahbari: Allayev Firuz Abdunasimovich</h6>
+    </div>
+    <div class="nimadur">
+        <div class="nimadur-1">
+            <b>Информация</b>
+            <p>Часто задаваемые вопросы</p>
+            <p>Блог</p>
+            <p>БлогНаши бренды</p>
+            <p>Карьера в Asaxiy</p>
+            <p>Публичная оферта</p>
+            <p>Оферта для рассрочку</p>
+            <p>О нас</p>
+        </div>
+        <div class="nimadur-2">
+            <b>Для связи</b>
+        <p><i class="bi bi-telephone"></i>+998 71 200 01 05</p>
+        <p><i class="bi bi-briefcase"></i>info@asaxiy.uz</p>
+        <p><i class="bi bi-telegram"></i>Telegram bot</p>
+        <p><i class="bi bi-signal"></i> улица Ислама Каримова, 49, Ташкент</p>
+        <b>Мы в соц. сетях</b>
+        <p>
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-telephone"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-youtube"></i>
+        <i class="bi bi-wifi"></i>
+    </p>
+        </div>
+        <div class="nimadur-3">
+
+            <b>Доставка и магазины</b>
+            <p>
+            <button class="dokoncha"><i class="bi bi-bank2"></i>dokon cha</button>
+        </p>
+        <p>
+            <button class="dokoncha"><i class="bi bi-command"></i>dokon cha</button>
+        </p>
+        </div>
+     
+        </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="blue">
+    <div class="blu">
+        <div class="bl">
+            <div class="b"> <img src="./kub-1.svg" alt=""></div>
+            <div>
+                <h6>Endi bozorga borishga hojat yoq</h6>
+                <p>Bizda qulay narxlar va uyga <br> yetkazib berishlar mavjud</p>
+            </div>
+        </div>
+        <div class="bl">
+            <div class="b"> <img src="./kub-2.svg" alt=""></div>
+            <div>
+                <h6>Tez yetkazib berish</h6>
+                <p>Bizning hizmatimiz sizni <br> ajablantiradi </p>
+            </div>
+        </div>
+        <div class="bl">
+            <div class="b"> <img src="./kub-3.svg" alt=""></div>
+            <div>
+                <h6>Siz uchun qulayliklar </h6>
+                <p>Nosozlik yuzaga kelganda tez <br>rasmiylashtirish va qaytarish kafolati</p>
+            </div>
+        </div>
+        <div class="bl">
+            <div class="b"> <img src="./kub-4.svg" alt=""></div>
+            <div>
+                <h6>Bo'lib to'lash</h6>
+                <p>3, 6 yoki 12 oy davomida <br> oldindan tolov yoq</p>
+            </div>
+        </div>
+        
+       
+    </body>
+
+    
+ 
+
+
