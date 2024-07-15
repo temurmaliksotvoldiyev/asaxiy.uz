@@ -232,7 +232,7 @@ text-align: left;
     height: 100%;
 }
 .blue{
-    background: blue;
+    background: rgb(77, 77, 231);
     width: 100%;
     padding: 30px 50px;
     position: relative;
@@ -299,10 +299,11 @@ justify-content: space-between;
     justify-content: space-between;
 }
 .fix-iconn{
+ 
     display: flex;
     align-items: center;
     display: none;
- 
+ z-index: 1;
 }
 .display{
     display: flex;
@@ -310,7 +311,16 @@ justify-content: space-between;
 .fix-2{
     width: 100px;
     border: none;
-  
+    padding: 5px 0;
+    background: white;
+    border: 1px solid dodgerblue;
+    border-radius: 8px;
+    padding: 15px 0 0 0;
+}
+.fix-icon{
+    padding:20px 0px 0px 0px;
+
+
 }
 .bl{
     display: flex;
@@ -352,6 +362,59 @@ align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     font-size: 30px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 50px;
+    position: relative;
+    top: 140px;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    background-color: white;
+  
+}
+.p{
+    display: flex;
+    justify-content: space-between;
+}
+
+.b{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.045);
+    border-radius: 15px;
+}
+.carta{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* gap: 10px; */
+}
+.tolov > div {
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    border-radius: 20px;
+    /* background: rgba(0, 0, 0, 0.050); */
+}
+.tolov > div > img {
+    padding: 20px 20px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.050);
+    border-radius: 10px;
+}
+.tolov{
+    display: flex;
+flex-wrap: wrap;
+}
+.b1{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
 }
 .brend{
     padding-top: 150px;
@@ -422,6 +485,20 @@ header{
     margin-bottom: 30px;
     border-radius: 10px;
  }
+ .tolov > div {
+    width: 150px;
+    height: 70px;
+    padding: 20px;
+    border-radius: 20px;
+    /* background: rgba(0, 0, 0, 0.050); */
+}
+.tolov > div > img {
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.050);
+    border-radius: 10px;
+}
   }
   @media only screen and (max-width: 600px) {
     .none{
@@ -444,10 +521,81 @@ header{
   }
   @media only screen and (max-width: 450px) {
     .fix-iconn{
+        width: 100%;
    position: fixed;
    left: 0;
    bottom: 0;
    display: block;
-  margin: auto;
+
     }
    }
+   @media only screen and (max-width: 1496px) {
+    .section{
+     width: 100%;
+     margin: auto;
+   
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .carousel, .cart4{
+      width: 100%;
+      margin: auto;
+    }
+    }
+    @media only screen and (max-width: 450px) {
+  .rang1{
+      width: 100%;
+  }
+  .logo1 {
+      width: 100%;
+      margin: auto;
+      padding: 0 50px;
+  }
+  .carousel{
+      width: 100%;
+  }
+  .cardplus{
+      display: none;
+  }
+  .rang2{
+      width: 100%;
+  }
+  .nol2{
+      width: 100%;
+      margin: auto;
+  }
+  .rang1{
+      padding: 20px 10px;
+  }
+  .cardmin{
+      border: none;
+      background: white;
+      max-width: 140px;
+      min-height: 440px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+   }
+   .logo1{
+    display: none;
+   }
+    }
+    @media only screen and (max-width: 600px) {
+      .none{
+          display: none;
+       }
+       .minbrend > div  {
+          padding: 0 40px;
+          width: 140px;
+          height: 100px;
+          background: white;
+          margin: auto;
+      }
+    }
+    @media only screen and (max-width: 880px) {
+     .card{
+      margin-top: 30px;
+      width: 100%;
+      margin: auto;
+     }
+    }
